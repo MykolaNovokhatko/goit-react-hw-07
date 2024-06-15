@@ -1,0 +1,11 @@
+.listStyle {
+    display: flex;
+    gap: 6px;
+}
+
+.itemStyle {
+    display: flex;
+    border: 2px solid;
+    border-radius: 3px;
+    padding: 8px;
+}
