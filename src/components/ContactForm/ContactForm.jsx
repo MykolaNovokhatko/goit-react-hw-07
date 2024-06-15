@@ -30,23 +30,23 @@ export default function ContactForm() {
       number: values.number,
     };
     dispatch(addContact(newContact));
-    console.log(newContact);
     actions.resetForm();
   };
+
   return (
     <Formik
       initialValues={{
-        username: ' ',
-        number: ' ',
+        username: '',
+        number: '',
       }}
       validationSchema={UserSchema}
       onSubmit={handleSubmit}
     >
       <Form className={css.formStyle}>
         <div className={css.itemStyle}>
-          <label htmlFor="name">Name</label>
-          <Field type="text" id="name" name="name" />
-          <ErrorMessage className={css.errorStyle} name="name" component="div" />
+          <label htmlFor="username">Name</label>
+          <Field type="text" id="username" name="username" />
+          <ErrorMessage className={css.errorStyle} name="username" component="div" />
         </div>
         <div className={css.itemStyle}>
           <label htmlFor="number">Number</label>
