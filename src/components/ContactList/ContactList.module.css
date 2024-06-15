@@ -1,10 +1,17 @@
+.contactList {
+    display: flex;
+}
+
 .listStyle {
     display: flex;
     gap: 6px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .itemStyle {
     display: flex;
+    max-width: 140px;
     border: 2px solid;
     border-radius: 3px;
     padding: 8px;
